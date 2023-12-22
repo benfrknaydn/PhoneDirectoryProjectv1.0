@@ -10,8 +10,8 @@ struct telephone {
 };
 
 int menuHazirla(void);
-//void AramaYap(void);
-//void MesajAt(void);
+//void AramaYap(void); v2.0 icin tasarlandi.
+//void MesajAt(void);  v2.0 icin tasarlandi.
 int telefonEkle(void);
 int telefonlariListele(void);
 int isimaramasiYap(char *);
@@ -200,7 +200,8 @@ int numaraaramasiYap(char *arananNumara) {
             continue;
         }
 
-        if (!strcmp(arananNumara, aktifKayit.numara)) { // bulundu!
+        if (!strcmp(arananNumara, aktifKayit.numara)) 
+        { // bulundu!
             printf("%s\t\t\t", aktifKayit.isim);
             printf("%s\t\t\t", aktifKayit.kod);
             printf("%s\n", aktifKayit.numara);
